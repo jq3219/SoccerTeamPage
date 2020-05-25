@@ -13,6 +13,7 @@
 #tabMenu{
     overflow:hidden;
     background-color : skyBlue;
+    text-align: center;
 }
 
 #tabMenu ul{
@@ -23,34 +24,21 @@
 
 .tabUl{
   position:relative;
-  float:right;
   overflow: hidden;
 }
 
 #tabMenu .tabNum {
     position:relative;
-    display:block;
+    display:inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
     padding:0px;
     font-size : 35px;
-    float:left;
-    vertical-align: center;
+    vertical-align: top;
     text-align: center;
     overflow: hidden;
 }
 
-.tabNum:hover .tabSubMenu{
-  height:auto;
-  overflow: hidden;
-}
-
-.tabSubMenu{
-  height:0px;
-}
-
-.tabSubMenu li{
-  font-size: 18px;
-  text-align: center;
-}
 
 #tabMenu:after{
     content:'';
@@ -67,63 +55,6 @@
     clear:both;
 }
 
-/*------------------카테고리 처리------------------*/
-#main_Category{
-    width:12%;
-    height:70%;
-    margin:0px;
-    margin-top: 2%;
-    margin-right:2px;
-    padding: 0px;
-    padding-left: 1%;
-    float:left;
-    text-align: left;
-}
-
-#main_Category ul{
-  list-style-type: none;
-  margin:0px;
-  padding:0px;
-}
-
-.ctgUl{
-  position:relative;
-  float:left;
-  overflow: hidden;
-}
-
-.mainCtgNum{
-  position:relative;
-  display:inline;
-  padding:0px;
-  font-size : 20px;
-  float:left;
-  vertical-align: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.mainCtgNum:hover .subCtg{
-  height:auto;
-  overflow: hidden;
-}
-
-.subCtg{
-  height:0px;
-}
-
-.subCtg li{
-  font-size:17px;
-  list-style-type: circle;
-  text-align: left;
-  vertical-align: center;
-}
-
-#main_Category:after{
-    clear:both;
-    display:block;
-    content:'';
-}
 
 /*------------------mainMenu 처리------------------*/
 #main_Menu{
@@ -143,10 +74,7 @@
 
 /*------------------footer 처리------------------*/
 
-#foot{
-    position:relative;
-    height:23px;
-    clear : both;
-    background : #ddd;
-    text-align : center;
+footer{
+  text-align: center;
+  font-size: 15px;
 }

@@ -1,0 +1,157 @@
+#bgImage{
+    margin : auto;
+    padding: auto;
+    width : 30%;
+
+    float : center;
+    background-color: white;
+    font-size : 50px;
+}
+
+/*------------------탭 메뉴 처리------------------*/
+
+#tabMenu{
+    overflow:hidden;
+    background-color : skyBlue;
+    text-align: center;
+}
+
+#tabMenu ul{
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+}
+
+.tabUl{
+  position:relative;
+  overflow: hidden;
+}
+
+#tabMenu .tabNum {
+    position:relative;
+    display:inline-block;
+    padding:0px;
+    font-size : 35px;
+    vertical-align: top;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+#tabMenu:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+/*------------------main 처리------------------*/
+#main{
+    float:left;
+}
+
+#main:after{
+    display:block;
+    clear:both;
+}
+
+
+/*------------------mainMenu 처리------------------*/
+#main_Menu{
+    width:75%;
+    float:left;
+    padding:10px;
+}
+
+
+
+/*------------------날씨 처리------------------*/
+#weather{
+    float:right;
+}
+
+
+
+/*------------------footer 처리------------------*/
+
+#foot{
+    position:relative;
+    height:23px;
+    clear : both;
+    background : #ddd;
+    text-align : center;
+}
+
+
+
+
+/*------------------카테고리 처리------------------*/
+#main_Category{
+    width:12%;
+    height:70%;
+    margin:0px;
+    margin-top: 2%;
+    margin-right:2px;
+    padding: 0px;
+    padding-left: 1%;
+    float:left;
+    text-align: left;
+}
+
+#main_Category ul{
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+}
+
+.ctgUl{
+  position:relative;
+  float:left;
+  overflow: hidden;
+}
+
+.mainCtgNum{
+  position:relative;
+  display:inline;
+  padding:0px;
+  font-size : 20px;
+  float:left;
+  vertical-align: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mainCtgNum:hover .subCtg{
+  height:auto;
+  overflow: hidden;
+}
+
+.subCtg{
+  height:0px;
+}
+
+.subCtg li{
+  font-size:17px;
+  list-style-type: circle;
+  text-align: left;
+  vertical-align: center;
+}
+
+#main_Category:after{
+    clear:both;
+    display:block;
+    content:'';
+}
+
+/* 탭 서브 메뉴 드롭다운 방식 */
+.tabNum:hover .tabSubMenu{
+  height:auto;
+  overflow: hidden;
+}
+
+.tabSubMenu{
+  height:0px;
+}
+
+.tabSubMenu li{
+  font-size: 18px;
+  text-align: center;
+}
